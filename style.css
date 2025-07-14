@@ -19,7 +19,8 @@ button {
   background-color: #ff0080;
   border: none;
   padding: 15px 30px;
-  font-size: 1.2em;
+  font-size: 1.5em;
+  touch-action: manipulation; /* Previene zoom y retardo táctil */
   color: #fff;
   margin: 20px 0;
   cursor: pointer;
@@ -34,4 +35,21 @@ button:hover {
   margin-top: 20px;
   font-style: italic;
   color: #ffaa00;
+
+
+@media (max-width: 600px) {
+  h1 {
+    font-size: 1.8em;
+  }
+
+  button {
+    font-size: 1.6em;
+    padding: 18px 36px;
+  }
+
+  #click-count, #oracle {
+    font-size: 1.2em;
+  }
+}
+
 }
